@@ -1,0 +1,16 @@
+@import url('../commun/formulaire.css');
+@import url('../commun/voitures.css');
+.titre {
+    padding-bottom: 10px;
+}
+
+.search_categories {
+    margin-top: 2%;
+}
+
+.button-end {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15%;
+    width: 100%;
+}

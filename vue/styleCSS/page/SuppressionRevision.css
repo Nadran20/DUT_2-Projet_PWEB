@@ -1,0 +1,17 @@
+@import url('../commun/voitures.css');
+@import url('../commun/formulaire.css');
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.formulaire>.search_categories,
+.formulaire>.radio {
+    justify-self: normal;
+    align-self: normal;
+}
+
+.formulaire {
+    grid-row-gap: 15px;
+}

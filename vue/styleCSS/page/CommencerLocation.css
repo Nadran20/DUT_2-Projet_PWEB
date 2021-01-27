@@ -1,0 +1,39 @@
+@import url('../commun/formulaire.css');
+@import url('../commun/voitures.css');
+@import url('../commun/message.css');
+.contrat {
+    display: grid;
+    margin: 0 auto;
+}
+
+#img-contrat {
+    width: 15px;
+    height: auto;
+}
+
+.grid-contrat {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 100%;
+    grid-gap: 5px;
+}
+
+.grid-df {
+    width: 100%;
+    text-align: center;
+}
+
+.info {
+    margin-top: 5%;
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+.text-contrat:hover,
+.ckcontrat:hover {
+    cursor: pointer;
+}
+
+.ckContrat {
+    transform: scale(1.75);
+}

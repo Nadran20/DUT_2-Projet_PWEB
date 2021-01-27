@@ -1,0 +1,66 @@
+@import url('body.css');
+@import url('radioBouton.css');
+@import url('listeDeroulante.css');
+
+body{font-size: 25px;}
+
+.titre {
+    border: none;
+    border-bottom: 1px solid black;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    background: white;
+}
+
+.formulaire {
+    display: grid;
+    grid-template-columns: 485px;
+    justify-items: center;
+    align-items: center;
+    background: white;
+    border: 2px solid black;
+    border-radius:6px;
+    width: max-content;
+    height: auto;
+    padding: 1% 3%;
+    margin: 10% auto;
+    box-shadow: 10px 5px 5px #ce8b10;
+}
+
+
+input:focus:invalid {
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535;
+}
+
+input:focus:valid {
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+
+.contenu > div {
+    margin: 10px 0;
+}
+
+.button-end > input {
+    margin-top: 10px ;
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    background:#d4d8d4;
+    border-radius: 10px;
+}
+
+#Bretour:hover {
+    border: 2px solid red;
+    background: #e5e9e5;
+    cursor: pointer;
+}
+#Bvalider:hover {
+    border: 2px solid lightgreen;
+    background: #e5e9e5;
+    cursor: pointer;
+}
+

@@ -1,0 +1,15 @@
+@import url('../commun/formulaire.css');
+.titre {
+    padding-bottom: 10px;
+}
+
+.search_categories {
+    margin-bottom: 2%;
+}
+
+.button-end {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15%;
+    width: 100%;
+}

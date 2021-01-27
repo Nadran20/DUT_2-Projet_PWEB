@@ -1,0 +1,48 @@
+.Voiture {
+    display: grid;
+    grid-template-rows: 1fr, 10px, 10px;
+    border: 2px solid black;
+    background: white;
+    box-shadow: 10px 5px 5px #ce8b10;
+}
+
+.imgVoiture {
+    margin: 0 auto;
+    height: 200px;
+    width: auto;
+    background: white;
+}
+
+.NomVoiture {
+    font-size: 18;
+    font-style: italic;
+    background: black;
+    color: white;
+    text-align: center;
+    font-weight: 650;
+    border-top: 1px solid black;
+    border-left: 1px solid white;
+}
+
+.CaracVoiture {
+    font-weight: 500;
+    padding: 3%;
+    background: white;
+    border-left: 20px solid lightgreen;
+}
+
+
+/*Voiture en révision*/
+
+.revision>.Voitures>.Voiture>.CaracVoiture,
+.revision>.Voiture>.CaracVoiture {
+    border-left: 20px solid yellow;
+}
+
+
+/*Voiture en location*/
+
+.loue>.Voitures>.Voiture>.CaracVoiture,
+.loué>.Voiture>.CaracVoiture {
+    border-left: 20px solid red;
+}

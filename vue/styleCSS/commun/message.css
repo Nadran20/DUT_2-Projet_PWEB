@@ -1,0 +1,68 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+.my-notify-info,
+.my-notify-success,
+.my-notify-error,
+.my-notify-warning {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+}
+
+.my-notify-info:before,
+.my-notify-success:before,
+.my-notify-error:before,
+.my-notify-warning:before {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: 400;
+    speak-as: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.my-notify-info:before {
+    content: "\f05a";
+}
+
+.my-notify-warning:before {
+    content: '\f071';
+}
+
+.my-notify-success:before {
+    content: '\f00c';
+}
+
+.my-notify-error:before {
+    content: '\f057';
+}
+
+.my-notify-info {
+    color: #00529B;
+    background-color: #BDE5F8;
+    /*  border: 1px #00529B;*/
+}
+
+.my-notify-warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+
+.my-notify-success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    /* border: 1px rgb(31, 58, 2);*/
+}
+
+.my-notify-error {
+    color: #D8000C;
+    background-color: #FFD2D2;
+}

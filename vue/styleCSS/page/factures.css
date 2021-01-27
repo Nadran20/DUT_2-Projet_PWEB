@@ -1,0 +1,109 @@
+@import url("../commun/voiture.css");
+@import url('../commun/body.css');
+.Voiture {
+    grid-column: 1;
+    box-shadow: none;
+}
+
+
+.CaracVoiture {
+    border: none;
+}
+
+.Facture {
+    grid-column: 2;
+    background: white;
+    border: 2px solid black;
+}
+
+.entreprises {
+    display: grid;
+    grid-row-gap: 50px;
+    background: white;
+}
+
+.entreprises>div {
+    background: lightgray;
+    text-align: center;
+    font-size: 30px;
+}
+
+.entreprise {
+    display: grid;
+    grid-template-rows: auto;
+    margin: 0 10%;
+    border: 3px solid black;
+    background: white;
+}
+
+.IdFacture {
+    font-size: 18;
+    font-style: italic;
+    background: #ce8b10;
+    color: black;
+    text-align: center;
+    font-weight: 650;
+    border-bottom: 2px solid black;
+}
+
+.paye>.Facture>.IdFacture {
+    background: greenyellow;
+}
+
+.impaye>.Facture>.IdFacture {
+    background: red;
+}
+
+.Billet {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    margin: 10px 10%;
+    box-shadow: 10px 5px 5px #ce8b10;
+}
+
+.InfoFacture {
+    padding: 10px;
+    line-height: 1.5em;
+    text-align: start;
+    font-weight: 500;
+}
+
+.NomEntreprise {
+    color: #ce8b10;
+    background: black;
+    justify-self: center;
+    width: 50%;
+    text-align: center;
+    border-top: unset;
+    font-style: italic;
+    border-bottom: unset;
+    border-radius: 10px;
+    border-style: double;
+}
+
+.button-end > input {
+    margin-top: 10px ;
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    background:#d4d8d4;
+    border-radius: 10px;
+}
+
+#Bretour:hover {
+    border: 2px solid red;
+    background: #e5e9e5;
+    cursor: pointer;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1200px) {
+    .Billet {
+        grid-template-columns: 1fr;
+    }
+    .Facture {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}

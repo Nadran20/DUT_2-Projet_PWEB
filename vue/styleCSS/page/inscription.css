@@ -1,0 +1,52 @@
+@import url('../commun/formulaire.css');
+#inLo,
+#inEn {
+    display: none;
+}
+
+input {
+    font-size: 22px;
+    width: 300pt;
+}
+
+.contenu {
+    text-align: center;
+    align-self: center;
+}
+
+.choix {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.nom,
+.mdp,
+.email {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-rows: auto;
+    width: max-content;
+    align-items: center;
+    align-items: center;
+}
+
+.choix>.radio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+    align-items: center;
+    justify-items: center;
+}
+
+.radio__label {
+    font-size: 25px;
+}
+
+
+/**/
+
+.buttons {
+    display: flex;
+    margin-top: 5%;
+    grid-gap: 10px;
+}

@@ -1,0 +1,85 @@
+
+.radio {    
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-gap: 0.5em ;
+    width: max-content;
+    color: var(--color);
+    input {
+        &:focus+.radio__control {
+            box-shadow: 0 0 0 0.05em #fff, 0 0 0.15em 0.1em currentColor;
+        }
+    }
+    &:focus-within {
+        .radio__label {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+
+.radio__input {
+    display: none;
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        &:focus+.radio__control {
+            box-shadow: 0 0 0 0.05em #fff, 0 0 0.15em 0.1em currentColor;
+        }
+        &:checked+.radio__control {
+            background: radial-gradient(currentcolor 50%, var(--color) 50%);
+        }
+    }
+}
+
+.radio__input>input>&:focus+.radio__control {
+    box-shadow: 0 0 0 0.05em #fff, 0 0 0.15em 0.1em currentColor;
+}
+
+.radio__input {
+    display: flex;
+    width: max-content;
+}
+
+.hide {
+    position: absolute;;
+    z-index:-1;
+}
+
+.radio__control {
+    display: grid;
+    place-items: center;
+    width: 1.1em;
+    height: 1.1em;
+    border-radius: 50%;
+    border: 0.1em solid black;
+    transform: translateY(-0.05em);
+    align-self: center;
+    justify-self: center;
+}
+
+.radio__label {
+    line-height: 1;
+    transition: 180ms all ease-in-out;
+    opacity: 0.8;
+    color: black;
+}
+
+&:checked+.radio__control {
+    background: radial-gradient(currentcolor 50%, var(--color) 50%);
+}
+
+input+.radio__control::before {
+    content: "";
+    width: .5em;
+    height: .5em;
+    box-shadow: inset .5em .5em var(--color);
+    border-radius: 50%;
+    transition: 180ms transform ease-in-out;
+    transform: scale(0);
+}
+
+input:checked+.radio__control::before {
+    transform: scale(1.05);
+}
